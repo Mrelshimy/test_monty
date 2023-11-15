@@ -27,11 +27,3 @@ int get_opcode(stack_t **stack, char *op_code, unsigned int line_num)
 	}
 	return (1);
 }
-
-void start_node(stack_t *stack)
-{
-	stack = malloc(sizeof(stack_t));
-	stack->n = 0;
-	stack->prev = NULL;
-	stack->next = NULL;
-}
